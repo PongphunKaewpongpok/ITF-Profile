@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+        function setUsername() {
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setProfileImage() {
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileimg").value; // url(*Link to your image*)
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileImage">
+            </div>
+            <div class="notification">6</div>
+        </div>
+        <div class="username">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600; font: bold;" id="username-p">Pongphun's Gallery</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label style="font-size: x-large; font-weight: 600;">Username</label><input style="margin-left: 10px; margin-right: 10px;" type="text"
+                id="username"><button id="setUsername" onclick="setUsername()">Apply</button></div>
+            <div><label style="font-size: x-large; font-weight: 600;">Profile Image</label><input style="margin-left: 10px; margin-right: 10px;" type="text"
+                id="profileimg"><button id="setProfile" onclick="setProfileImage()">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image: url(./Image/เสามงคล.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/Ra.webp);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/Emotional_Damage.webp);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/fbi.png);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/first_time.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/nigerundayo.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/พระอิศวร.jpg);"></div>
+            <div class="gallery-item row-span" style="background-image: url(./Image/Monkey_Puppet.png);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/He\'s_Got_a_Point.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/snorlax.jpg);"></div>
+        </div>
+    </div>
+</body>F
+
+</html>
